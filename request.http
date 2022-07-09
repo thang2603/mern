@@ -1,0 +1,52 @@
+POST http://localhost:5000/api/auth/register
+Content-Type: application/json
+
+{
+  "username": "thang7",
+  "password": "thang"
+}
+
+###
+
+POST http://localhost:5000/api/auth/login
+Content-Type: application/json
+
+{
+  "username": "thang7",
+  "password": "thang"
+}
+
+
+###
+POST http://localhost:5000/api/posts
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MmM3ZTk2ZThjMDE2ZmNkOTFjMzEyZWMiLCJpYXQiOjE2NTcyNjk4NjJ9.v86-TqCYtARdNjUfvbgxm0jvTJgADJFVySrXx6hsOKY
+
+{
+  "title": "React",
+  "description": "React",
+  "url": "react.com",
+  "status": "TO LEARN"
+}
+
+
+###
+GET http://localhost:5000/api/posts
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MmM3ZTk2ZThjMDE2ZmNkOTFjMzEyZWMiLCJpYXQiOjE2NTcyNjk4NjJ9.v86-TqCYtARdNjUfvbgxm0jvTJgADJFVySrXx6hsOKY
+
+
+###
+PUT http://localhost:5000/api/posts/62c7e9968c016fcd91c312ef
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MmM3ZTk2ZThjMDE2ZmNkOTFjMzEyZWMiLCJpYXQiOjE2NTcyNjk4NjJ9.v86-TqCYtARdNjUfvbgxm0jvTJgADJFVySrXx6hsOKY
+{
+  "title": "thna",
+  "description": "Vuejs",
+  "url": "vue.com",
+  "status": "LEARNING"
+}
+
+
+###
+DELETE  http://localhost:5000/api/posts/62c7e9968c016fcd91c312ef
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MmM3ZTk2ZThjMDE2ZmNkOTFjMzEyZWMiLCJpYXQiOjE2NTcyNjk4NjJ9.v86-TqCYtARdNjUfvbgxm0jvTJgADJFVySrXx6hsOKY
